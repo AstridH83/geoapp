@@ -19,9 +19,9 @@ GITHUB_CREDENTIALS = 'github-Credentials'
         }
         stage('unit test'){
             steps{
-                sh 'mven clean'
+                sh 'mvn clean'
                 sh 'mvn test'
-                sh 'mven compile'
+                sh 'mvn compile'
             }
         }
         
