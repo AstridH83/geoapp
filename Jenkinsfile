@@ -24,7 +24,7 @@ GITHUB_CREDENTIALS = 'github-Credentials'
                 sh 'mven compile'
             }
         }
-        stage()
+        
 
     }
 }
