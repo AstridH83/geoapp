@@ -8,7 +8,7 @@ pipeline{
     environment {
 BRANCH_NAME = 'main'
 GIT_URL = 'https://github.com/AstridH83/geoapp.git'
-GITHUB_CREDENTIALS = 'github-Credentials'
+GITHUB_CREDENTIALS = 'github-credentials'
     }
 
     stages {
