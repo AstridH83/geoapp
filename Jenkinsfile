@@ -11,7 +11,7 @@ GIT_URL = 'https://github.com/AstridH83/geoapp.git'
 GITHUB_CREDENTIALS = 'github-credentials'
 SONAQUBE_CRED='sonar-cred'
 SONAQUBE_INSTALLATION='sonar-server'
-APP_NAME='geo-app'
+APP_NAME='geoapp'
     }
 
     stages {
