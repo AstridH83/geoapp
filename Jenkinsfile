@@ -22,12 +22,14 @@ QG_CONDITION= 'false'
               git branch: "${BRANCH_NAME}", credentialsId: "${GITHUB_CREDENTIALS}", url: "${GIT_URL}"  
             }
         }
+        
         stage('unit test'){
             steps{
                 sh 'mvn clean'
                 sh 'mvn test'
                 sh 'mvn compile'
             }
+            /*
         }
         stage('Sonarqube Scan'){
             steps{
@@ -48,6 +50,15 @@ QG_CONDITION= 'false'
         stage('Trivy Scan'){
             steps{
                  sh "trivy fs --format table -o maven_dependency.html ."
+            }
+        }
+        */
+        stage('package app'){
+            steps{
+                sh'mvn package'
+                sh 'ls'
+                sh 'pwd'
+                sh 'ls target'
             }
         }
        
