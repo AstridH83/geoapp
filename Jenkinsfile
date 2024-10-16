@@ -13,7 +13,7 @@ GITHUB_CREDENTIALS = 'github-credentials'
 SONAQUBE_CRED='sonar-cred'
 SONAQUBE_INSTALLATION='sonar-server'
 APP_NAME='geoapp'
-QG_CONDITION= 'true'
+QG_CONDITION= 'false'
     }
 
     stages {
