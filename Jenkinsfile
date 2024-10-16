@@ -7,6 +7,7 @@ pipeline{
 
     environment {
 BRANCH_NAME = 'main'
+SCANNER_HOME= tool 'sonar-tool'
 GIT_URL = 'https://github.com/AstridH83/geoapp.git'
 GITHUB_CREDENTIALS = 'github-credentials'
 SONAQUBE_CRED='sonar-cred'
