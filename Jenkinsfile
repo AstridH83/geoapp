@@ -45,6 +45,12 @@ QG_CONDITION= 'false'
               }
             }
         }
+        stage('Trivy Scan'){
+            steps{
+                 sh "trivy fs --format table -o maven_dependency.html ."
+            }
+        }
+       
 
         
 
