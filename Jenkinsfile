@@ -29,8 +29,9 @@ QG_CONDITION= 'false'
                 sh 'mvn test'
                 sh 'mvn compile'
             }
-            /*
+            
         }
+        /*
         stage('Sonarqube Scan'){
             steps{
                 withSonarQubeEnv(credentialsId: "${SONAQUBE_CRED}", \
