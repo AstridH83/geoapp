@@ -18,7 +18,7 @@ JFROG_CRED='jfrog-cred'
 ARTIFACTPATH='target/*.jar'
 ARTIFACTORY_PASSWORD='password'
 ARTIFACTORY_USER='admin'
-ARTIFACTORY_URL='http://ec2-44-202-2-31.compute-1.amazonaws.com:8081/artifactory'
+ARTIFACTORY_URL='http://3.83.87.125:8081/artifactory'
 REPO='geolocation'
 ARTIFACTTARGETPATH='release_${BUILD_ID}.jar'
 DOCKER_REPO='145023101888.dkr.ecr.us-east-1.amazonaws.com/geoapp'
@@ -41,7 +41,7 @@ AWS_REGION='us-east-1'
             }
             
         }
-        /*
+        
         stage('Sonarqube Scan'){
             steps{
                 withSonarQubeEnv(credentialsId: "${SONAQUBE_CRED}", \
@@ -63,7 +63,7 @@ AWS_REGION='us-east-1'
                  sh "trivy fs --format table -o maven_dependency.html ."
             }
         }
-        */
+        
         stage('package app'){
             steps{
                 sh'mvn package'
